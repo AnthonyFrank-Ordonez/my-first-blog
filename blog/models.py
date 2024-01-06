@@ -14,7 +14,7 @@ class Post(models.Model):
 
     # actions/methods
     def publish(self):
-        self.published_date = timezone.now
+        self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
